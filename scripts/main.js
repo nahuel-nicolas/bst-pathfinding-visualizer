@@ -1,5 +1,5 @@
 import { Matrix } from './matrix-builder.js';
-import { bst } from './bst-tim.js';
+import { bst } from './bst.js';
 
 const isMobile = checkIfIsMobileDevice();
 const matrix = new Matrix(isMobile);

@@ -1,0 +1,124 @@
+/* Reset */
+*,*:focus,*:hover{
+    outline:none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+button {
+    border: none;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Matrix */
+#matrix-container {
+    margin: 20px;
+    .matrix {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /*
+        border: 1px solid black;
+        */
+    
+        .row {
+            display: flex;
+            flex-direction: row;
+            .cell {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                border: 1px solid rgb(0, 174, 255);
+                border-radius: 5%;
+                margin: 1px;
+                color: white;
+
+                i {
+                    position: absolute;
+                }
+            }
+            .special{
+                background-color:  rgb(0, 174, 255);
+            }
+            .blocked-node {
+                border: 1px solid transparent;
+                background-color: transparent;
+                /*
+                background-color: rgb(78, 77, 77);
+                */
+            }
+            .traversed {
+                background-color: green;
+            }
+            .path-node {
+                background-color: rgb(0, 174, 255);
+            }
+        }
+    }
+}
+
+#end-start-buttons {
+    padding-bottom: 10px;
+    .end-start-button {
+        background-color: transparent;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .end-start-button:hover {
+        color: grey;
+    }
+    .selected {
+        color: rgba(165, 162, 162, 0.678);
+    }
+}
+
+#board-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .board-button {
+        color: white;
+        font-size: 18px;
+        border: 1px solid white;
+        background-color: rgb(48, 152, 212);
+        padding: 10px;
+        margin: 5px;
+        border-radius: 8%;
+        cursor: pointer;
+    }
+    .board-action-btn {
+        width: 80px;
+    }
+    .board-button:hover {
+        border: 1px solid black;
+        
+    }
+    .selected {
+        cursor: auto;
+        background-color: rgb(20, 104, 153);
+    }
+    .selected:hover {
+        cursor: auto;
+        border: 1px solid white;
+    }
+}
+

@@ -1,0 +1,122 @@
+/* Reset */
+*, *:focus, *:hover {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+button {
+  border: none;
+}
+
+#main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Matrix */
+#matrix-container {
+  margin: 20px;
+}
+#matrix-container .matrix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /*
+  border: 1px solid black;
+  */
+}
+#matrix-container .matrix .row {
+  display: flex;
+  flex-direction: row;
+}
+#matrix-container .matrix .row .cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid #00aeff;
+  border-radius: 5%;
+  margin: 1px;
+  color: white;
+}
+#matrix-container .matrix .row .cell i {
+  position: absolute;
+}
+#matrix-container .matrix .row .special {
+  background-color: #00aeff;
+}
+#matrix-container .matrix .row .blocked-node {
+  border: 1px solid transparent;
+  background-color: transparent;
+  /*
+  background-color: rgb(78, 77, 77);
+  */
+}
+#matrix-container .matrix .row .traversed {
+  background-color: green;
+}
+#matrix-container .matrix .row .path-node {
+  background-color: #00aeff;
+}
+
+#end-start-buttons {
+  padding-bottom: 10px;
+}
+#end-start-buttons .end-start-button {
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+#end-start-buttons .end-start-button:hover {
+  color: grey;
+}
+#end-start-buttons .selected {
+  color: rgba(165, 162, 162, 0.678);
+}
+
+#board-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#board-buttons .board-button {
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  background-color: #3098d4;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8%;
+  cursor: pointer;
+}
+#board-buttons .board-action-btn {
+  width: 80px;
+}
+#board-buttons .board-button:hover {
+  border: 1px solid black;
+}
+#board-buttons .selected {
+  cursor: auto;
+  background-color: #146899;
+}
+#board-buttons .selected:hover {
+  cursor: auto;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=main.css.map */

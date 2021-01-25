@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>BST Pathfinding Visualizer</title>
+</head>
+<body>
+    <div id="main-content">
+        <div id="matrix-container"></div>
+        <div id="end-start-buttons">
+            <button class="end-start-button" id="start-button"><i class="fas fa-map-marker-alt fa-2x"></i></button>
+            <button class="end-start-button" id="end-button"><i class="far fa-dot-circle fa-2x"></i></button>
+        </div>
+        <div id="board-buttons">
+            <button class="board-button board-selector-btn" id="left-button"><i class="fas fa-chevron-left"></i></button>
+            <button class="board-button board-action-btn selected" id="play-button">Play</button>
+            <button class="board-button board-action-btn" id="renew-button">Renew</button>
+            <button class="board-button board-selector-btn" id="right-button"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
